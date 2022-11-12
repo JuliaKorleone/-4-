@@ -4,7 +4,10 @@
       $city="Берлин";
       $post="Почтовый ящик";
       $tel="Номер телефона засекречен";
-      $age="Возраст: 35";
+      $age1="Возраст в годах: ";
+      $age2="Возраст в днях: ";
+      $years= 35; //возраст в годах
+      $days= 365; //возраст в годах умножаем на количество дней в году, 365
       
       $lang = ["English","Deutsch"];
       $Berufserfahrung = ["Sales","Einkauf","Büro"];
@@ -48,7 +51,8 @@
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo "{$country} {$city}" ; ?></p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $post ; ?></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $tel ; ?></p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $age ; ?></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $age1 = $years ; ?></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $age2 = $years * $days ; ?></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
